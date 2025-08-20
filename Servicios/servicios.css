@@ -1,0 +1,153 @@
+/* === ESTILOS GENERALES === */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #0e0e0e;
+  color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* === HEADER === */
+header {
+  background: url('../Images/ChatGPT Image 31 jul 2025, 04_48_08 p.m..png') no-repeat center center/cover;
+  text-align: center;
+  padding: 40px 20px;
+}
+header img {
+  width: 100px;
+  margin-bottom: 16px;
+}
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+header h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #ffb347;
+}
+
+/* === NAVBAR === */
+nav {
+  background: #000;
+  padding: 12px;
+  text-align: center;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 14px;
+  font-weight: 600;
+  transition: color .25s;
+}
+nav a:hover {
+  color: #ffb347;
+}
+
+/* === MAIN === */
+main {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+}
+h2 {
+  color: #ffb347;
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* === GRID DE SERVICIOS === */
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+/* === TARJETAS DE SERVICIO === */
+.servicio {
+  background: linear-gradient(145deg, #1a1a1a, #111);
+  border-radius: 14px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.35);
+  transition: transform .25s, box-shadow .25s;
+}
+.servicio:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.servicio i {
+  font-size: 2.4rem;
+  margin-bottom: 16px;
+  color: #ffb347;
+}
+.servicio h3 {
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.servicio p {
+  color: #ddd;
+  font-size: 1rem;
+  margin-bottom: 14px;
+}
+.servicio ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px 0;
+}
+.servicio ul li {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  color: #ffe0b3;
+}
+
+/* === PRECIO === */
+.precio {
+  background: #ffb347;
+  color: #222;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+}
+.premium {
+  background: linear-gradient(135deg, #ffb347, #ffcf81);
+}
+
+/* === BOTONES === */
+.cta {
+  display: inline-block;
+  margin: 6px 2px;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all .25s;
+  background: #ffb347;
+  color: #222;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.cta:hover {
+  background: #ffcf81;
+  transform: scale(1.05);
+}
+.cta.grande {
+  font-size: 1rem;
+  padding: 12px 22px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.8rem; }
+  header h2 { font-size: 1.1rem; }
+  .servicios-grid { gap: 20px; }
+  .cta { font-size: 0.85rem; padding: 8px 14px; }
+}
