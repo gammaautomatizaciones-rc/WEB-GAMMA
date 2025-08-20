@@ -4,118 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Servicios | Gamma Automatizaciones</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background: #111;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: url('Images/ChatGPT Image 31 jul 2025, 04_48_08 p.m..png') no-repeat center center/cover;
-      text-align: center;
-      padding: 40px 20px;
-    }
-    header img { width: 100px; margin-bottom: 16px; }
-    header h1 { font-size: 2.5rem; font-weight: 900; }
-    header h2 { font-size: 1.3rem; font-weight: 500; color: #ffb347; }
-
-    nav {
-      background: #000;
-      padding: 12px;
-      text-align: center;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 14px;
-      font-weight: 600;
-    }
-    nav a:hover { color: #ffb347; }
-
-    main {
-      max-width: 950px;
-      margin: 40px auto;
-      padding: 20px;
-    }
-    h2 {
-      color: #ffb347;
-      text-align: center;
-      margin-bottom: 28px;
-      font-size: 1.8rem;
-    }
-    .servicios-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 28px;
-    }
-    .servicio {
-      background: #1a1a1a;
-      border-radius: 12px;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.25);
-      transition: transform .2s;
-    }
-    .servicio:hover { transform: translateY(-6px); }
-    .servicio i {
-      font-size: 2.2rem;
-      margin-bottom: 14px;
-      color: #ffb347;
-    }
-    .servicio h3 {
-      margin-bottom: 10px;
-      font-size: 1.25rem;
-    }
-    .servicio p {
-      color: #ddd;
-      font-size: 1rem;
-      margin-bottom: 12px;
-    }
-    .servicio ul {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 14px 0;
-    }
-    .servicio ul li {
-      margin: 6px 0;
-      font-size: 0.95rem;
-      color: #ffe0b3;
-    }
-    .cta {
-      display: inline-block;
-      margin: 4px 2px;
-      padding: 6px 12px;
-      border-radius: 5px;
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 0.82rem;
-      transition: background .2s;
-      background: #ffb347;
-      color: #222;
-    }
-    .cta:hover { background: #ffcf81; }
-
-    @media (max-width: 600px) {
-      header h1 { font-size: 1.8rem; }
-      header h2 { font-size: 1.1rem; }
-      .servicios-grid { gap: 18px; }
-      .cta { font-size: 0.75rem; padding: 5px 10px; }
-    }
-  </style>
+  <link rel="stylesheet" href="Servicios/servicios.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17488015524"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17488015524');
-</script>
-  <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17488015524"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-17488015524'); </script>
-  <!-- Event snippet for Contacto conversion page --> <script> gtag('event', 'conversion', {'send_to': 'AW-17488015524/uYShCM6Dv4kbEKTh95JB'}); </script>
 </head>
 <body>
   <header>
@@ -133,73 +23,82 @@
   </nav>
 
   <main>
-    <h2>Nuestros Servicios</h2>
-    <div class="servicios-grid">
+  <h2>Nuestros Servicios</h2>
+  <div class="servicios-grid">
 
-      <div class="servicio">
-        <i class="fas fa-envelope"></i>
-        <h3>Automatización de Mails</h3>
-        <p>Un bot con IA dedicado a responder correos electrónicos de forma automática.</p>
-        <ul>
-          <li>Filtrar y priorizar correos</li>
-          <li>Respuestas personalizadas y en varios idiomas</li>
-          <li>Redacción más rápida y profesional</li>
-        </ul>
-        <a href="https://wa.me/541170659960?text=Quiero%20Automatización%20de%20Mails" target="_blank" class="cta">Quiero esto</a>
-      </div>
-
-      <div class="servicio">
-        <i class="fas fa-database"></i>
-        <h3>Mails en Sheet con Resumen</h3>
-        <p>Bot que almacena correos en Google Sheets, con columna de resumen y posibles respuestas.</p>
-        <ul>
-          <li>Guardar automáticamente cada mail entrante</li>
-          <li>Generar resumen breve del contenido</li>
-          <li>Proponer respuesta lista para enviar</li>
-        </ul>
-        <a href="https://wa.me/541170659960?text=Quiero%20Mails%20en%20Sheet%20con%20Resumen" target="_blank" class="cta">Quiero esto</a>
-      </div>
-
-      <div class="servicio">
-        <i class="fas fa-file-invoice"></i>
-        <h3>Automatización de Facturas</h3>
-        <p>Con Google Apps Script se reemplaza el tipeo manual de facturas, centralizando la info en un Sheet.</p>
-        <ul>
-          <li>Ahorro de tiempo y reducción de errores</li>
-          <li>Reportes automáticos y análisis más claros</li>
-          <li>Gestión administrativa optimizada</li>
-        </ul>
-        <a href="https://wa.me/541170659960?text=Quiero%20Automatización%20de%20Facturas" target="_blank" class="cta">Quiero esto</a>
-      </div>
-
-      <div class="servicio">
-        <i class="fas fa-paper-plane"></i>
-        <h3>Envío Automático de Listas de Precios</h3>
-        <p>Se envían listas de precios automáticamente a clientes de 1 a 2 veces por mes.</p>
-        <ul>
-          <li>Sin límite de correos</li>
-          <li>Garantiza información actualizada</li>
-          <li>Reduce tiempos y errores en la comunicación</li>
-        </ul>
-        <a href="https://wa.me/541170659960?text=Quiero%20Envío%20Automático%20de%20Listas%20de%20Precios" target="_blank" class="cta">Quiero esto</a>
-      </div>
-
-      <div class="servicio">
-        <i class="fas fa-robot"></i>
-        <h3>Bots Inteligentes (IG / WSP)</h3>
-        <p>Bots que conversan en mensajes directos, brindan precios, agendan reuniones y confirman por Gmail.</p>
-        <ul>
-          <li>Memoria temporal por sesión</li>
-          <li>Atención en Instagram, WhatsApp y más</li>
-          <li>Optimiza la conversión de consultas en clientes</li>
-        </ul>
-        <a href="https://wa.me/541170659960?text=Quiero%20Bots%20Inteligentes" target="_blank" class="cta">Quiero esto</a>
-      </div>
-
+    <div class="servicio">
+      <i class="fas fa-envelope"></i>
+      <h3>Automatización de Mails</h3>
+      <p>Un bot con IA dedicado a responder correos electrónicos de forma automática.</p>
+      <ul>
+        <li>Filtrar y priorizar correos</li>
+        <li>Respuestas personalizadas y en varios idiomas</li>
+        <li>Redacción más rápida y profesional</li>
+      </ul>
+      <span class="precio">80 USD</span>
+      <a href="https://wa.me/541170659960?text=Quiero%20Automatización%20de%20Mails" target="_blank" class="cta">Quiero esto</a>
     </div>
+
+    <div class="servicio">
+      <i class="fas fa-database"></i>
+      <h3>Mails en Sheet con Resumen</h3>
+      <p>Bot que almacena correos en Google Sheets, con columna de resumen y posibles respuestas.</p>
+      <ul>
+        <li>Guardar automáticamente cada mail entrante</li>
+        <li>Generar resumen breve del contenido</li>
+        <li>Proponer respuesta lista para enviar</li>
+      </ul>
+      <span class="precio">80 USD</span>
+      <a href="https://wa.me/541170659960?text=Quiero%20Mails%20en%20Sheet%20con%20Resumen" target="_blank" class="cta">Quiero esto</a>
+    </div>
+
+    <div class="servicio">
+      <i class="fas fa-file-invoice"></i>
+      <h3>Automatización de Facturas</h3>
+      <p>Con Google Apps Script se reemplaza el tipeo manual de facturas, centralizando la info en un Sheet.</p>
+      <ul>
+        <li>Ahorro de tiempo y reducción de errores</li>
+        <li>Reportes automáticos y análisis más claros</li>
+        <li>Gestión administrativa optimizada</li>
+      </ul>
+      <span class="precio">80 USD</span>
+      <a href="https://wa.me/541170659960?text=Quiero%20Automatización%20de%20Facturas" target="_blank" class="cta">Quiero esto</a>
+    </div>
+
+    <div class="servicio">
+      <i class="fas fa-paper-plane"></i>
+      <h3>Envío Automático de Listas de Precios</h3>
+      <p>Se envían listas de precios automáticamente a clientes de 1 a 2 veces por mes.</p>
+      <ul>
+        <li>Sin límite de correos</li>
+        <li>Garantiza información actualizada</li>
+        <li>Reduce tiempos y errores en la comunicación</li>
+      </ul>
+      <span class="precio">80 USD</span>
+      <a href="https://wa.me/541170659960?text=Quiero%20Envío%20Automático%20de%20Listas%20de%20Precios" target="_blank" class="cta">Quiero esto</a>
+    </div>
+
+    <div class="servicio destacado">
+      <i class="fas fa-robot"></i>
+      <h3>Bots Inteligentes (IG / WSP)</h3>
+      <p>Bots que conversan en mensajes directos, brindan precios, agendan reuniones y confirman por Gmail.</p>
+      <ul>
+        <li>Memoria temporal por sesión</li>
+        <li>Atención en Instagram, WhatsApp y más</li>
+        <li>Optimiza la conversión de consultas en clientes</li>
+      </ul>
+      <span class="precio premium">140 USD</span>
+      <a href="https://wa.me/541170659960?text=Quiero%20Bots%20Inteligentes" target="_blank" class="cta grande">Quiero esto</a>
+    </div>
+
+  </div>
+</main>
+
+
   </main>
 </body>
 </html>
+
 
 
 
