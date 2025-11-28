@@ -4,75 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gamma Automatizaciones</title>
-  <style>
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-      background: #111;
-      color: #fff;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-    header {
-      background: url('Images/ChatGPT Image 31 jul 2025, 04_48_08 p.m..png') no-repeat center center/cover;
-      padding: 48px 16px 32px 16px;
-      text-align: center;
-      position: relative;
-    }
-    header img {
-      width: 120px;
-      margin-bottom: 24px;
-      filter: drop-shadow(0 2px 16px rgba(0,0,0,0.35));
-    }
-    header h1 { font-size: 2.8rem; letter-spacing: 2px; font-weight: 900; }
-    header h2 { font-size: 2rem; font-weight: 500; margin-top: 6px; letter-spacing: 1px; }
-    header p { margin-top: 16px; font-size: 1.08rem; color: #c1c1c1; font-weight: 400; }
-    nav {
-      width: 100%;
-      background: #000;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 18px 0 14px 0;
-      box-shadow: 0 2px 18px 0 rgba(0,0,0,0.12);
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 8px 18px;
-      font-size: 1.02rem;
-      font-weight: 600;
-      transition: color .17s, border-bottom .17s;
-      border-bottom: 2px solid transparent;
-      padding-bottom: 2px;
-    }
-    nav a:hover, nav a:focus {
-      color: #ffb347;
-      border-bottom: 2px solid #ffb347;
-      outline: none;
-    }
-    @media (max-width: 600px) {
-      header { padding: 32px 8px 24px 8px; }
-      header img { width: 82px; margin-bottom: 16px; }
-      header h1 { font-size: 2rem; }
-      header h2 { font-size: 1.2rem; }
-      nav a { margin: 6px 8px; font-size: 0.98rem; }
-    }
-  </style>
+  <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-  <header>
-    <img src="Images/LOGO FINAK.png" alt="Logo Gamma Automatizaciones">
-    <h1>GAMMA</h1>
-    <h2>AUTOMATIZACIONES</h2>
-    <p>FÁCIL. RÁPIDO. Y SIN DOLORES DE CABEZA.</p>
-  </header>
-  <nav>
-    <a href="informacion.html">-Informacion</a>
-    <a href="servicios.html">-Servicios</a>
-    <a href="quienes-somos.html">-Quienes somos</a>
-    <a href="contacto.html">-Contactanos</a>
-  </nav>
+
+  <!-- CONTENEDOR GENERAL (para controlar full screen en desktop) -->
+  <div class="layout">
+
+    <!-- HEADER -->
+    <header class="hero">
+      <div class="overlay"></div>
+      <img src="Images/LOGO FINAK.png" alt="Logo Gamma" class="logo">
+      <h1>GAMMA</h1>
+      <h2>AUTOMATIZACIONES</h2>
+      <p class="tagline">FÁCIL • RÁPIDO • SIN DOLOR DE CABEZA</p>
+    </header>
+
+    <!-- NAV -->
+    <nav>
+      <a href="informacion.html">Información</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="quienes-somos.html">Quiénes somos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <!-- INTRO (ocupa el resto del alto) -->
+    <main class="intro">
+      <h2>Automatizá tu pyme sin complicarte la vida</h2>
+      <p>Implementamos sistemas inteligentes para que dejes de perder horas en tareas repetitivas y puedas enfocarte en hacer crecer tu negocio.</p>
+      <a href="contacto.html" class="cta-float">Quiero empezar</a>
+
+    </main>
+
+  </div>
+
 </body>
 </html>

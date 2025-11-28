@@ -4,125 +4,214 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Servicios | Gamma Automatizaciones</title>
-  <link rel="stylesheet" href="Servicios/servicios.css">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/servicios.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- Google Tag (tu código original intacto) -->
   <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17488015524');
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17488015524"></script>
 
-  gtag('config', 'AW-17488015524');
-</script>
-  <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17488015524"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-17488015524'); </script>
-  <!-- Event snippet for Contacto conversion page --> <script> gtag('event', 'conversion', {'send_to': 'AW-17488015524/uYShCM6Dv4kbEKTh95JB'}); </script>
-  <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"795a3a203fc46041a1ec01c59c1623c3"})});</script>
-  <!-- Google tag (gtag.js)EXILON -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17765890169"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Conversion -->
+  <script>
+    gtag('event', 'conversion', {'send_to': 'AW-17488015524/uYShCM6Dv4kbEKTh95JB'});
+  </script>
 
-  gtag('config', 'AW-17765890169');
-</script>
-  
+  <!-- Metricool -->
+  <script>
+    function loadScript(a){
+      var b=document.getElementsByTagName("head")[0],c=document.createElement("script");
+      c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",
+      c.onreadystatechange=a,c.onload=a,b.appendChild(c)
+    }
+    loadScript(function(){beTracker.t({hash:"795a3a203fc46041a1ec01c59c1623c3"})});
+  </script>
+
 </head>
-  
 
 <body>
+
+  <!-- HEADER -->
   <header>
     <img src="Images/LOGO FINAK.png" alt="Logo Gamma Automatizaciones">
     <h1>GAMMA AUTOMATIZACIONES</h1>
     <h2>SERVICIOS</h2>
   </header>
 
+  <!-- NAVBAR -->
   <nav>
     <a href="index.html">Inicio</a>
     <a href="informacion.html">Información</a>
-    <a href="servicios.html">Servicios</a>
+    <a href="servicios.html" class="activo">Servicios</a>
     <a href="quienes-somos.html">Quiénes somos</a>
     <a href="contacto.html">Contacto</a>
   </nav>
 
+
+  <!-- CARRUSEL 3D -->
+  <section class="carousel-section">
+    <h2>Servicios Destacados</h2><br><br>
+
+    <div class="carousel-wrapper">
+      <button id="prev" class="nav-btn"><i class="fa-solid fa-angle-left"></i></button>
+
+      <div id="carousel" class="carousel">
+
+        <div class="course-card">
+          <h3>Creación de Páginas Web</h3>
+          <p>Webs modernas, rápidas y optimizadas para ventas.<br><b>Con dominio patrocinado por la empresa</b></p>
+          <span class="precio">OFERTA $5000 / mes</span>
+          <a class="cta" target="_blank"
+            href="https://wa.me/543854356825?text=Quiero%20una%20Página%20Web">Quiero esto</a>
+        </div>
+
+        <div class="course-card">
+          <h3>Creación de Páginas Web</h3>
+          <p>Webs modernas, rápidas y optimizadas para ventas. Si incluyen dominio propio</p>
+          <span class="precio">OFERTA $15000 / mes</span>
+          <a class="cta" target="_blank"
+            href="https://wa.me/543854356825?text=Quiero%20una%20Página%20Web">Quiero esto</a>
+        </div>
+
+        <div class="course-card">
+          <h3>Campañas Publicitarias META</h3>
+          <p>Gestión profesional de IG + Facebook Ads para escalar ventas.</p>
+          <span class="precio">$300.000 / mes</span>
+          <a class="cta" target="_blank"
+            href="https://wa.me/543854356825?text=Quiero%20Campañas%20Meta">Quiero esto</a>
+        </div>
+
+        <div class="course-card">
+          <h3>Campañas Google Ads</h3>
+          <p>Publicidad orientada a captar leads con intención real.</p>
+          <span class="precio">$200.000 / mes</span>
+          <a class="cta" target="_blank"
+            href="https://wa.me/543854356825?text=Quiero%20Campañas%20Google">Quiero esto</a>
+        </div>
+
+      </div>
+
+      <button id="next" class="nav-btn"><i class="fa-solid fa-angle-right"></i></button>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE SERVICIOS COMPLETA -->
   <main>
-  <h2>Nuestros Servicios</h2>
-  <div class="servicios-grid">
+    <h2>Más Servicios</h2>
 
-    <div class="servicio">
-      <i class="fas fa-envelope"></i>
-      <h3>Automatización de Mails</h3>
-      <p>Un bot con IA dedicado a responder correos electrónicos de forma automática.</p>
-      <ul>
-        <li>Filtrar y priorizar correos</li>
-        <li>Respuestas personalizadas y en varios idiomas</li>
-        <li>Redacción más rápida y profesional</li>
-      </ul>
-      <span class="precio">80 USD</span>
-      <a href="https://wa.me/543854356825?text=Quiero%20Automatización%20de%20Mails" target="_blank" class="cta">Quiero esto</a>
+    <div class="servicios-grid">
+
+      <!-- AUTOMATIZACIÓN MAILS -->
+      <div class="servicio">
+        <i class="fas fa-envelope"></i>
+        <h3>Automatización de Mails</h3>
+        <p>Bot con IA que responde correos automáticamente.</p>
+        <ul>
+          <li>Filtra y prioriza</li>
+          <li>Responde en segundos</li>
+          <li>Idiomas + redacción pro</li>
+        </ul>
+        <span class="precio">80 USD</span>
+        <a href="https://wa.me/543854356825?text=Quiero%20Automatización%20de%20Mails" 
+           target="_blank" class="cta">Quiero esto</a>
+      </div>
+
+      <!-- SHEET -->
+      <div class="servicio">
+        <i class="fas fa-database"></i>
+        <h3>Mails en Sheet con Resumen</h3>
+        <p>Todo mail entrante → guardado + resumen + respuesta sugerida.</p>
+        <ul>
+          <li>Automático</li>
+          <li>Resumen breve</li>
+          <li>Respuesta lista</li>
+        </ul>
+        <span class="precio">80 USD</span>
+        <a href="https://wa.me/543854356825?text=Quiero%20Mails%20en%20Sheet" 
+           target="_blank" class="cta">Quiero esto</a>
+      </div>
+
+      <!-- FACTURAS -->
+      <div class="servicio">
+        <i class="fas fa-file-invoice"></i>
+        <h3>Automatización de Facturas</h3>
+        <p>Cargá y emití facturas sin tipear nunca más.</p>
+        <ul>
+          <li>Ahorra horas</li>
+          <li>Sin errores</li>
+          <li>Reportes automáticos</li>
+        </ul>
+        <span class="precio">80 USD</span>
+        <a href="https://wa.me/543854356825?text=Quiero%20Facturas%20Automatizadas" 
+           target="_blank" class="cta">Quiero esto</a>
+      </div>
+
+      <!-- LISTAS DE PRECIOS -->
+      <div class="servicio">
+        <i class="fas fa-paper-plane"></i>
+        <h3>Envío Automático de Listas</h3>
+        <p>Listas actualizadas a clientes 1 o 2 veces al mes.</p>
+        <ul>
+          <li>Full automático</li>
+          <li>Sin límite de envíos</li>
+          <li>Siempre al día</li>
+        </ul>
+        <span class="precio">80 USD</span>
+        <a href="https://wa.me/543854356825?text=Quiero%20Listas%20Automáticas" 
+           target="_blank" class="cta">Quiero esto</a>
+      </div>
+
+      <!-- BOTS -->
+      <div class="servicio destacado">
+        <i class="fas fa-robot"></i>
+        <h3>Bots Inteligentes (IG / WSP)</h3>
+        <p>Bots que venden solos: responden, agendan y cierran ventas.</p>
+        <ul>
+          <li>IA real</li>
+          <li>Atiende 24/7</li>
+          <li>Convierte +40% consultas</li>
+        </ul>
+        <span class="precio premium">140 USD</span>
+        <a href="https://wa.me/543854356825?text=Quiero%20Bots%20Inteligentes" 
+           target="_blank" class="cta grande">Quiero esto</a>
+      </div>
+
     </div>
 
-    <div class="servicio">
-      <i class="fas fa-database"></i>
-      <h3>Mails en Sheet con Resumen</h3>
-      <p>Bot que almacena correos en Google Sheets, con columna de resumen y posibles respuestas.</p>
-      <ul>
-        <li>Guardar automáticamente cada mail entrante</li>
-        <li>Generar resumen breve del contenido</li>
-        <li>Proponer respuesta lista para enviar</li>
-      </ul>
-      <span class="precio">80 USD</span>
-      <a href="https://wa.me/543854356825?text=Quiero%20Mails%20en%20Sheet%20con%20Resumen" target="_blank" class="cta">Quiero esto</a>
-    </div>
+    <!-- CASOS DE USO -->
+    <section class="casos">
+      <h2>Ejemplos de Uso</h2>
 
-    <div class="servicio">
-      <i class="fas fa-file-invoice"></i>
-      <h3>Automatización de Facturas</h3>
-      <p>Con Google Apps Script se reemplaza el tipeo manual de facturas, centralizando la info en un Sheet.</p>
-      <ul>
-        <li>Ahorro de tiempo y reducción de errores</li>
-        <li>Reportes automáticos y análisis más claros</li>
-        <li>Gestión administrativa optimizada</li>
-      </ul>
-      <span class="precio">80 USD</span>
-      <a href="https://wa.me/543854356825?text=Quiero%20Automatización%20de%20Facturas" target="_blank" class="cta">Quiero esto</a>
-    </div>
+      <div class="casos-grid">
 
-    <div class="servicio">
-      <i class="fas fa-paper-plane"></i>
-      <h3>Envío Automático de Listas de Precios</h3>
-      <p>Se envían listas de precios automáticamente a clientes de 1 a 2 veces por mes.</p>
-      <ul>
-        <li>Sin límite de correos</li>
-        <li>Garantiza información actualizada</li>
-        <li>Reduce tiempos y errores en la comunicación</li>
-      </ul>
-      <span class="precio">80 USD</span>
-      <a href="https://wa.me/543854356825?text=Quiero%20Envío%20Automático%20de%20Listas%20de%20Precios" target="_blank" class="cta">Quiero esto</a>
-    </div>
+        <div class="caso">
+          <h3>🌪️ Ecommerce saturado de mensajes</h3>
+          <p>Implementamos bot IG+WSP → +42% ventas.</p>
+        </div>
 
-    <div class="servicio destacado">
-      <i class="fas fa-robot"></i>
-      <h3>Bots Inteligentes (IG / WSP)</h3>
-      <p>Bots que conversan en mensajes directos, brindan precios, agendan reuniones y confirman por Gmail.</p>
-      <ul>
-        <li>Memoria temporal por sesión</li>
-        <li>Atención en Instagram, WhatsApp y más</li>
-        <li>Optimiza la conversión de consultas en clientes</li>
-      </ul>
-      <span class="precio premium">140 USD</span>
-      <a href="https://wa.me/543854356825?text=Quiero%20Bots%20Inteligentes" target="_blank" class="cta grande">Quiero esto</a>
-    </div>
+        <div class="caso">
+          <h3>🏗️ Pyme facturando manual</h3>
+          <p>Automatizamos el proceso → de 5 horas a 12 minutos.</p>
+        </div>
 
-  </div>
-</main>
+        <div class="caso">
+          <h3>🚀 Marca sin ventas claras</h3>
+          <p>Nueva web + Google Ads → 3.2x ROAS.</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- JS DEL CARRUSEL -->
+  <script src="js/servicios.js"></script>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-

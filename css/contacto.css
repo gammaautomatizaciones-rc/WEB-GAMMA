@@ -1,0 +1,266 @@
+/* RESET GENERAL */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0b0b0b;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* ===== BLOB ANIMADO ===== */
+.blob {
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, #ffb347, #ff6a00);
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.35;
+  animation: blobMove 18s infinite alternate ease-in-out;
+  z-index: -1;
+  top: -40px;
+  left: -40px;
+}
+
+@keyframes blobMove {
+  0% { transform: translate(-40px, -20px) scale(1); }
+  100% { transform: translate(120px, 80px) scale(1.25); }
+}
+
+/* ===== HEADER ===== */
+.header-hero {
+  text-align: center;
+  padding: 30px 12px 20px;
+}
+
+.hero-logo {
+  width: 90px;
+  filter: drop-shadow(0 2px 14px rgba(0,0,0,0.4));
+  margin-bottom: 12px;
+}
+
+.hero-title {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+
+.hero-sub {
+  margin-top: 4px;
+  font-size: 1.05rem;
+  opacity: .9;
+}
+
+/* ===== NAV ===== */
+.navbar {
+  width: 100%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 12px 0;
+  box-shadow: 0 2px 18px rgba(0,0,0,0.2);
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: .95rem;
+  padding: 6px 10px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: .2s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #ffb347;
+  border-bottom: 2px solid #ffb347;
+}
+
+/* ===== MAIN CARD ===== */
+.contact-container {
+  width: 92%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 24px 20px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.contact-container h2 {
+  font-size: 1.55rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  background: linear-gradient(90deg, #ffb347, #ffe0a3);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-text {
+  font-size: 1rem;
+  line-height: 1.55;
+  margin-bottom: 16px;
+  color: #e5e5e5;
+}
+
+.contact-links {
+  margin-bottom: 18px;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.contact-links a {
+  color: #ffb347;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* ===== FORM ===== */
+.contact-form {
+  margin-top: 12px;
+}
+
+.field {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 14px;
+  background: #161616;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  font-size: 1rem;
+  color: #fff;
+  outline: none;
+  transition: all .25s ease;
+}
+
+.field textarea {
+  height: 110px;
+  resize: none;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: #ffb347;
+  background: #1d1d1d;
+}
+
+/* LABEL FLOAT */
+.field label {
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  color: #bbbbbb;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: .2s ease;
+}
+
+.field input:not(:placeholder-shown) + label,
+.field textarea:not(:placeholder-shown) + label,
+.field input:focus + label,
+.field textarea:focus + label {
+  top: -10px;
+  left: 10px;
+  font-size: .78rem;
+  color: #ffb347;
+  background: #0b0b0b;
+  padding: 0 6px;
+  border-radius: 4px;
+}
+
+/* ===== BOTÓN ===== */
+.btn-send {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #ffb347, #ff9f45);
+  color: #000;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: transform .18s ease, opacity .18s;
+}
+
+.btn-send:hover {
+  transform: translateY(-3px) scale(1.02);
+  opacity: 0.92;
+}
+
+/* ===== MOBILE SPECIAL ===== */
+@media(max-width: 600px) {
+
+  .hero-title {
+    font-size: 1.45rem;
+  }
+
+  .hero-sub {
+    font-size: .9rem;
+  }
+
+  .hero-logo {
+    width: 70px;
+  }
+
+  .contact-container {
+    margin-top: 28px;
+    padding: 20px 16px;
+  }
+
+  .contact-container h2 {
+    font-size: 1.35rem;
+  }
+
+  .field input,
+  .field textarea {
+    padding: 12px;
+    font-size: .95rem;
+  }
+
+  .field label {
+    font-size: .9rem;
+  }
+
+  .btn-send {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  /* Blob más chico y lejos de texto */
+  .blob {
+    width: 220px;
+    height: 220px;
+    filter: blur(85px);
+    top: -60px;
+    left: -60px;
+  }
+}
+
+/* ===== TABLET OPTIMIZADO ===== */
+@media (min-width: 600px) and (max-width: 900px) {
+  .contact-container {
+    width: 85%;
+    padding: 30px 26px;
+  }
+}
