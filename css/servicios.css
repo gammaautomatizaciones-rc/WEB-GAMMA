@@ -1,4 +1,9 @@
 /* === RESET === */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden !important;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -36,28 +41,92 @@ header h2 {
   color: #ffb347;
 }
 
-/* === NAVBAR === */
-nav {
-  background: #000;
-  padding: 12px;
-  text-align: center;
+/* === NAVBAR EN DOS FILAS === */
+
+.nav-header {
   position: sticky;
   top: 0;
-  z-index: 50;
+  z-index: 999;
+  background: rgba(0,0,0,0.75);
+  backdrop-filter: blur(12px);
+  padding: 10px 0 4px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 14px;
+/* FILA SUPERIOR: LOGO + NOMBRE */
+.nav-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 6px;
+}
+
+.nav-top img {
+  width: 70px;
+  filter: drop-shadow(0 0 4px rgba(0,0,0,0.4));
+}
+
+.nav-top h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 6px;
+  letter-spacing: 1px;
+}
+
+/* FILA INFERIOR: MENÚ */
+.nav-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  padding: 8px 0 4px;
+}
+
+.nav-bottom a {
+  color: #f5f5f5;
   font-weight: 600;
-  transition: color .25s;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: 0.25s ease;
 }
 
-nav a:hover,
-nav a.activo {
+.nav-bottom a:hover {
+  background: rgba(255,179,71,0.15);
   color: #ffb347;
 }
+
+.nav-bottom a.activo {
+  border-bottom: 2px solid #ffb347;
+  padding-bottom: 4px;
+  color: #ffb347;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+
+  .nav-top img {
+    width: 55px;
+  }
+
+  .nav-top h1 {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+  }
+
+  .nav-bottom {
+    gap: 12px;
+    padding: 6px 0;
+    flex-wrap: wrap;
+  }
+
+  .nav-bottom a {
+    font-size: 0.8rem;
+    padding: 4px 6px;
+  }
+}
+
+
 
 /* === HERO SERVICIOS === */
 .hero-servicios {

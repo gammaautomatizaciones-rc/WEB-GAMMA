@@ -88,3 +88,18 @@ carousel.addEventListener("touchend", (e) => {
 });
 
 setCarouselPositions();
+// --- CLICK PARA MOVER CARRUSEL ---
+cards.forEach((card, i) => {
+  card.addEventListener("click", () => {
+    const offset = (i - currentIndex + cards.length) % cards.length;
+
+    if (offset === 1) {
+      // derecha
+      nextSlide();
+    } else if (offset === cards.length - 1) {
+      // izquierda
+      prevSlide();
+    }
+    // Si toca la del medio → no hacemos nada
+  });
+});
