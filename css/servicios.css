@@ -31,7 +31,7 @@ header img {
 
 header h1 {
   font-size: 2rem;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 1px;
 }
 
@@ -396,4 +396,5 @@ main {
     width: 190px;
   }
 }
+
 
