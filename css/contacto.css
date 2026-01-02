@@ -264,3 +264,55 @@ body {
     padding: 30px 26px;
   }
 }
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  margin: 10px;
+  min-width: 200px;
+  text-align: left;
+}
+
+.footer-section h3 {
+  color: #ffb347;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+.footer-section a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #ffb347;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 20px;
+  padding-top: 10px;
+  color: #999;
+  font-size: 0.9rem;
+}

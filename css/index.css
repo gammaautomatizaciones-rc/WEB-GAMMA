@@ -21,8 +21,6 @@ body, html {
 .layout {
   display: flex;
   flex-direction: column;
-  height: 100vh;            /* full screen */
-  overflow: hidden;         /* sin scroll en PC */
 }
 
 
@@ -43,8 +41,9 @@ body, html {
 }
 
 .logo {
-  width: 110px;
+  width: 140px;
   margin-bottom: 15px;
+  filter: drop-shadow(0 4px 20px rgba(0,0,0,0.5));
 }
 
 .hero h1 {
@@ -143,13 +142,10 @@ nav a:hover {
 
 
 /* ===================================
-   DESKTOP SIN SCROLL
+   DESKTOP
 =================================== */
 @media (min-width: 900px) {
-  html, body {
-    height: 100vh;
-    overflow: hidden !important;
-  }
+  /* Allow normal scrolling */
 }
 
 
@@ -189,7 +185,7 @@ nav a:hover {
     padding-bottom: 20px;
   }
 
-  .logo { width: 90px; }
+  .logo { width: 110px; }
 
   .hero h1 { font-size: 2.4rem; }
   .hero h2 { font-size: 1.3rem; }
@@ -244,7 +240,7 @@ nav a:hover {
 =================================== */
 @media (max-width: 768px) {
 
-  .logo { width: 75px; }
+  .logo { width: 95px; }
 
   .hero h1 { font-size: 2rem; }
   .hero h2 { font-size: 1.15rem; }
@@ -253,6 +249,23 @@ nav a:hover {
 
   .intro h2 { font-size: 1.45rem; }
   .intro p { font-size: .9rem; max-width: 550px; }
+
+  /* Ajustes para nuevas secciones */
+  .tips, .beneficios, .stats, .cta-section {
+    padding: 35px 18px;
+  }
+
+  .tips h2, .beneficios h2, .stats h2, .cta-section h2 {
+    font-size: 1.7rem;
+  }
+
+  .tips-grid, .beneficios-list, .stats-grid {
+    gap: 18px;
+  }
+
+  .numero {
+    font-size: 1.8rem !important;
+  }
 }
 
 
@@ -261,7 +274,7 @@ nav a:hover {
 =================================== */
 @media (max-width: 480px) {
 
-  .logo { width: 65px; }
+  .logo { width: 80px; }
 
   .hero h1 { font-size: 1.65rem; }
   .hero h2 { font-size: 1rem; }
@@ -270,6 +283,41 @@ nav a:hover {
 
   .intro h2 { font-size: 1.2rem; }
   .intro p { font-size: .85rem; }
+
+  /* Nuevas secciones responsive */
+  .tips, .beneficios, .stats, .cta-section {
+    padding: 30px 15px;
+  }
+
+  .tips h2, .beneficios h2, .stats h2, .cta-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .tips-grid, .beneficios-list, .stats-grid {
+    gap: 15px;
+  }
+
+  .tip, .beneficio, .stat {
+    padding: 15px;
+  }
+
+  .tip h3, .beneficio h3 {
+    font-size: 1rem;
+  }
+
+  .tip p, .beneficio p, .stat p {
+    font-size: 0.85rem;
+  }
+
+  .numero {
+    font-size: 1.5rem !important;
+  }
+
+  .cta-main {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
 }
 /* ===================================
    NAV Responsive para 1024px >
@@ -323,4 +371,265 @@ nav a:hover {
     font-size: 0.78rem;
     padding: 4px 2px;
   }
+}
+
+/* ===================================
+   TIPS SECTION
+=================================== */
+.tips {
+  background: #0e0e0e;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.tips h2 {
+  color: #ffb347;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .tips-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tip {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.25s;
+}
+
+.tip:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 179, 71, 0.1);
+}
+
+.tip h3 {
+  color: #ffb347;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.tip p {
+  color: #ddd;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* ===================================
+   BENEFICIOS SECTION
+=================================== */
+.beneficios {
+  background: #111;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.beneficios h2 {
+  color: #ffb347;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.beneficios-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .beneficios-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .beneficios-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.beneficio {
+  background: rgba(255, 179, 71, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 179, 71, 0.2);
+}
+
+.beneficio h3 {
+  color: #ffb347;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.beneficio p {
+  color: #ddd;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* ===================================
+   STATS SECTION
+=================================== */
+.stats {
+  background: #0e0e0e;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.stats h2 {
+  color: #ffb347;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.stat {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.stat .numero {
+  color: #ffb347;
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.stat p {
+  color: #ddd;
+  font-size: 0.9rem;
+}
+
+/* ===================================
+   CTA SECTION
+=================================== */
+.cta-section {
+  background: #111;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.cta-section h2 {
+  color: #ffb347;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.cta-section p {
+  color: #ddd;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.cta-main {
+  background: #ffb347;
+  color: #222;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: .2s;
+  display: inline-block;
+}
+
+.cta-main:hover {
+  background: #ffcf81;
+  transform: scale(1.05);
+}
+
+/* ===================================
+   FOOTER
+=================================== */
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  flex: none; /* no flex */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  margin: 10px;
+  min-width: 200px;
+  text-align: left;
+}
+
+.footer-section h3 {
+  color: #ffb347;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+.footer-section a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #ffb347;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 20px;
+  padding-top: 10px;
+  color: #999;
+  font-size: 0.9rem;
 }
