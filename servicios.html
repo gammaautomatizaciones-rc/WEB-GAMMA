@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Servicios | Gamma Automatizaciones</title>
-  <link rel="icon" href="Images/LOGO FINAK.png" type="image/png">
-
-  <!-- CSS -->
+  <link rel="icon" href="Images/logo-gamma.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/servicios.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-  <!-- Google Tag (tu código original intacto) -->
+  <!-- Google Tag -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -18,8 +18,6 @@
     gtag('config', 'AW-17488015524');
   </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17488015524"></script>
-
-  <!-- Conversion -->
   <script>
     gtag('event', 'conversion', {'send_to': 'AW-17488015524/uYShCM6Dv4kbEKTh95JB'});
   </script>
@@ -33,217 +31,331 @@
     }
     loadScript(function(){beTracker.t({hash:"795a3a203fc46041a1ec01c59c1623c3"})});
   </script>
-
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <img src="Images/LOGO FINAK.png" alt="Logo Gamma Automatizaciones">
-    <h1>GAMMA AUTOMATIZACIONES</h1>
-    <h2>SERVICIOS</h2>
-    
-  <div class="nav-top">
-    <img src="Images/LOGO FINAK.png" alt="Logo Gamma">
-    <h1>GAMMA AUTOMATIZACIONES</h1>
-  </div>
-
-  <nav class="nav-bottom">
-    <a href="index.html">Inicio</a>
-    <a href="informacion.html">Información</a>
-    <a href="servicios.html" class="activo">Servicios</a>
-    <a href="quienes-somos.html">Quiénes somos</a>
-    <a href="contacto.html">Contacto</a>
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="Images/logo-gamma.svg" alt="Gamma" class="nav-logo">
+        <span class="nav-brand-text">GAMMA</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="informacion.html">Informacion</a>
+        <a href="servicios.html" class="active">Servicios</a>
+        <a href="quienes-somos.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <a href="contacto.html" class="nav-cta">Empezar</a>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </nav>
-</header>
 
+  <!-- HERO -->
+  <header class="hero-servicios">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Nuestros servicios</div>
+      <h1>Soluciones que <span class="accent">transforman</span><br>tu negocio</h1>
+      <p>Desde automatizaciones con IA hasta campanas publicitarias. Todo lo que necesitas para escalar.</p>
+    </div>
+  </header>
 
-  <!-- CARRUSEL 3D -->
+  <!-- CARRUSEL 3D - DESTACADOS -->
   <section class="carousel-section">
-    <h2>Servicios Destacados</h2><br><br>
-
-    <div class="carousel-wrapper">
-      <button id="prev" class="nav-btn"><i class="fa-solid fa-angle-left"></i></button>
-
-      <div id="carousel" class="carousel">
-
-        <div class="course-card">
-          <h3>Creación de Páginas Web</h3>
-          <p>Webs modernas, rápidas y optimizadas para ventas.<br><b>Con dominio patrocinado por la empresa</b></p>
-          <span class="precio"> $150.000 / mes</span>
-          <a class="cta" target="_blank"
-            href="https://wa.me/543854356825?text=Quiero%20una%20Página%20Web">Quiero esto</a>
-        </div>
-
-        <div class="course-card">
-          <h3>Creación de Páginas Web</h3>
-          <p>Webs modernas, rápidas y optimizadas para ventas. Si incluyen dominio propio</p>
-          <span class="precio"> $100.000 / mes</span>
-          <a class="cta" target="_blank"
-            href="https://wa.me/543854356825?text=Quiero%20una%20Página%20Web">Quiero esto</a>
-        </div>
-
-        <div class="course-card">
-          <h3>Campañas Publicitarias META</h3>
-          <p>Gestión profesional de IG + Facebook Ads para escalar ventas.</p>
-          <span class="precio">$600.000 / mes</span>
-          <a class="cta" target="_blank"
-            href="https://wa.me/543854356825?text=Quiero%20Campañas%20Meta">Quiero esto</a>
-        </div>
-
-        <div class="course-card">
-          <h3>Campañas Google Ads</h3>
-          <p>Publicidad orientada a captar leads con intención real.</p>
-          <span class="precio">$750.000 / mes</span>
-          <a class="cta" target="_blank"
-            href="https://wa.me/543854356825?text=Quiero%20Campañas%20Google">Quiero esto</a>
-        </div>
-
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Destacados</span>
+        <h2>Servicios mas solicitados</h2>
+        <p>Los favoritos de nuestros clientes</p>
       </div>
 
-      <button id="next" class="nav-btn"><i class="fa-solid fa-angle-right"></i></button>
+      <div class="carousel-wrapper">
+        <button id="prev" class="carousel-btn carousel-btn-prev" aria-label="Anterior">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+
+        <div id="carousel" class="carousel">
+
+          <div class="course-card">
+            <div class="card-icon">
+              <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3>Pagina Web</h3>
+            <p>Webs modernas, rapidas y optimizadas para ventas. Con dominio patrocinado por la empresa.</p>
+            <div class="card-price">$150.000<small>/mes</small></div>
+            <a class="card-cta" target="_blank" href="https://wa.me/543854356825?text=Quiero%20una%20Página%20Web">Quiero esto</a>
+          </div>
+
+          <div class="course-card">
+            <div class="card-icon">
+              <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3>Pagina Web</h3>
+            <p>Webs modernas, rapidas y optimizadas para ventas. Si incluyen dominio propio.</p>
+            <div class="card-price">$100.000<small>/mes</small></div>
+            <a class="card-cta" target="_blank" href="https://wa.me/543854356825?text=Quiero%20una%20Página%20Web">Quiero esto</a>
+          </div>
+
+          <div class="course-card">
+            <div class="card-icon">
+              <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><path d="M6 8h.01M9 8h.01"/></svg>
+            </div>
+            <h3>Web + Admin + DB</h3>
+            <p>Pagina web profesional con panel de administracion y base de datos incluida.</p>
+            <div class="card-price">$250.000<small>/mes</small></div>
+            <a class="card-cta" target="_blank" href="https://wa.me/543854356825?text=Quiero%20Web%20con%20Panel%20Admin%20y%20Base%20de%20Datos">Quiero esto</a>
+          </div>
+
+          <div class="course-card">
+            <div class="card-icon">
+              <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+            </div>
+            <h3>Campanas META</h3>
+            <p>Gestion profesional de IG + Facebook Ads para escalar ventas.</p>
+            <div class="card-price">$600.000<small>/mes</small></div>
+            <a class="card-cta" target="_blank" href="https://wa.me/543854356825?text=Quiero%20Campañas%20Meta">Quiero esto</a>
+          </div>
+
+          <div class="course-card">
+            <div class="card-icon">
+              <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h3>Google Ads</h3>
+            <p>Publicidad orientada a captar leads con intencion real.</p>
+            <div class="card-price">$750.000<small>/mes</small></div>
+            <a class="card-cta" target="_blank" href="https://wa.me/543854356825?text=Quiero%20Campañas%20Google">Quiero esto</a>
+          </div>
+
+        </div>
+
+        <button id="next" class="carousel-btn carousel-btn-next" aria-label="Siguiente">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
     </div>
   </section>
 
-  <!-- SECCIÓN DE SERVICIOS COMPLETA -->
-  <main>
-    <h2>Más Servicios</h2>
-
-    <div class="servicios-grid">
-
-      <!-- AUTOMATIZACIÓN MAILS -->
-      <div class="servicio">
-        <i class="fas fa-envelope"></i>
-        <h3>Automatización de Mails</h3>
-        <p>Bot con IA que responde correos automáticamente.</p>
-        <ul>
-          <li>Filtra y prioriza</li>
-          <li>Responde en segundos</li>
-          <li>Idiomas + redacción pro</li>
-        </ul>
-        <span class="precio">1000 USD</span>
-        <a href="https://wa.me/543854356825?text=Quiero%20Automatización%20de%20Mails" 
-           target="_blank" class="cta">Quiero esto</a>
+  <!-- GRID DE SERVICIOS -->
+  <section class="servicios-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Catalogo completo</span>
+        <h2>Mas servicios</h2>
+        <p>Automatizaciones avanzadas para cada area de tu negocio</p>
       </div>
 
-      <!-- SHEET -->
-      <div class="servicio">
-        <i class="fas fa-database"></i>
-        <h3>Mails en Sheet con Resumen</h3>
-        <p>Todo mail entrante → guardado + resumen + respuesta sugerida.</p>
-        <ul>
-          <li>Automático</li>
-          <li>Resumen breve</li>
-          <li>Respuesta lista</li>
-        </ul>
-        <span class="precio">1000 USD</span>
-        <a href="https://wa.me/543854356825?text=Quiero%20Mails%20en%20Sheet" 
-           target="_blank" class="cta">Quiero esto</a>
-      </div>
+      <div class="servicios-grid">
 
-      <!-- FACTURAS -->
-      <div class="servicio">
-        <i class="fas fa-file-invoice"></i>
-        <h3>Automatización de Facturas</h3>
-        <p>Cargá y emití facturas sin tipear nunca más.</p>
-        <ul>
-          <li>Ahorra horas</li>
-          <li>Sin errores</li>
-          <li>Reportes automáticos</li>
-        </ul>
-        <span class="precio">1000 USD</span>
-        <a href="https://wa.me/543854356825?text=Quiero%20Facturas%20Automatizadas" 
-           target="_blank" class="cta">Quiero esto</a>
-      </div>
+        <div class="servicio-card featured">
+          <div class="featured-badge">Nuevo</div>
+          <div class="servicio-icon">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><path d="M6 8h.01M9 8h.01"/></svg>
+          </div>
+          <h3>Web + Panel Admin + Base de Datos</h3>
+          <p>Pagina web profesional con panel de administracion propio y base de datos integrada.</p>
+          <ul class="servicio-features">
+            <li>Diseño profesional</li>
+            <li>Panel admin completo</li>
+            <li>Base de datos incluida</li>
+            <li>Hosting y dominio</li>
+          </ul>
+          <div class="servicio-bottom">
+            <span class="servicio-price">$250.000/mes</span>
+            <a href="https://wa.me/543854356825?text=Quiero%20Web%20con%20Panel%20Admin%20y%20Base%20de%20Datos" target="_blank" class="servicio-cta">Quiero esto</a>
+          </div>
+        </div>
 
-      <!-- LISTAS DE PRECIOS -->
-      <div class="servicio">
-        <i class="fas fa-paper-plane"></i>
-        <h3>Envío Automático de Listas</h3>
-        <p>Listas actualizadas a clientes 1 o 2 veces al mes.</p>
-        <ul>
-          <li>Full automático</li>
-          <li>Sin límite de envíos</li>
-          <li>Siempre al día</li>
-        </ul>
-        <span class="precio">1000 USD</span>
-        <a href="https://wa.me/543854356825?text=Quiero%20Listas%20Automáticas" 
-           target="_blank" class="cta">Quiero esto</a>
-      </div>
+        <div class="servicio-card">
+          <div class="servicio-icon">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+          <h3>Automatizacion de Mails</h3>
+          <p>Bot con IA que responde correos automaticamente.</p>
+          <ul class="servicio-features">
+            <li>Filtra y prioriza</li>
+            <li>Responde en segundos</li>
+            <li>Idiomas + redaccion pro</li>
+          </ul>
+          <div class="servicio-bottom">
+            <span class="servicio-price">1000 USD</span>
+            <a href="https://wa.me/543854356825?text=Quiero%20Automatización%20de%20Mails" target="_blank" class="servicio-cta">Quiero esto</a>
+          </div>
+        </div>
 
-      <!-- BOTS -->
-      <div class="servicio destacado">
-        <i class="fas fa-robot"></i>
-        <h3>Bots Inteligentes (IG / WSP)</h3>
-        <p>Bots que venden solos: responden, agendan y cierran ventas.</p>
-        <ul>
-          <li>IA real</li>
-          <li>Atiende 24/7</li>
-          <li>Convierte +40% consultas</li>
-        </ul>
-        <span class="precio premium">500 USD</span>
-        <a href="https://wa.me/543854356825?text=Quiero%20Bots%20Inteligentes" 
-           target="_blank" class="cta grande">Quiero esto</a>
-      </div>
+        <div class="servicio-card">
+          <div class="servicio-icon">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3>Mails en Sheet + Resumen</h3>
+          <p>Todo mail entrante guardado + resumen + respuesta sugerida.</p>
+          <ul class="servicio-features">
+            <li>Automatico</li>
+            <li>Resumen breve</li>
+            <li>Respuesta lista</li>
+          </ul>
+          <div class="servicio-bottom">
+            <span class="servicio-price">1000 USD</span>
+            <a href="https://wa.me/543854356825?text=Quiero%20Mails%20en%20Sheet" target="_blank" class="servicio-cta">Quiero esto</a>
+          </div>
+        </div>
 
+        <div class="servicio-card">
+          <div class="servicio-icon">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>Automatizacion de Facturas</h3>
+          <p>Carga y emiti facturas sin tipear nunca mas.</p>
+          <ul class="servicio-features">
+            <li>Ahorra horas</li>
+            <li>Sin errores</li>
+            <li>Reportes automaticos</li>
+          </ul>
+          <div class="servicio-bottom">
+            <span class="servicio-price">1000 USD</span>
+            <a href="https://wa.me/543854356825?text=Quiero%20Facturas%20Automatizadas" target="_blank" class="servicio-cta">Quiero esto</a>
+          </div>
+        </div>
+
+        <div class="servicio-card">
+          <div class="servicio-icon">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </div>
+          <h3>Envio Automatico de Listas</h3>
+          <p>Listas actualizadas a clientes 1 o 2 veces al mes.</p>
+          <ul class="servicio-features">
+            <li>Full automatico</li>
+            <li>Sin limite de envios</li>
+            <li>Siempre al dia</li>
+          </ul>
+          <div class="servicio-bottom">
+            <span class="servicio-price">1000 USD</span>
+            <a href="https://wa.me/543854356825?text=Quiero%20Listas%20Automáticas" target="_blank" class="servicio-cta">Quiero esto</a>
+          </div>
+        </div>
+
+        <div class="servicio-card featured">
+          <div class="featured-badge">Popular</div>
+          <div class="servicio-icon">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>Bots Inteligentes (IG / WSP)</h3>
+          <p>Bots que venden solos: responden, agendan y cierran ventas.</p>
+          <ul class="servicio-features">
+            <li>IA real</li>
+            <li>Atiende 24/7</li>
+            <li>Convierte +40% consultas</li>
+          </ul>
+          <div class="servicio-bottom">
+            <span class="servicio-price">500 USD</span>
+            <a href="https://wa.me/543854356825?text=Quiero%20Bots%20Inteligentes" target="_blank" class="servicio-cta">Quiero esto</a>
+          </div>
+        </div>
+
+      </div>
     </div>
+  </section>
 
-    <!-- CASOS DE USO -->
-    <section class="casos">
-      <h2>Ejemplos de Uso</h2>
-
-      <div class="casos-grid">
-
-        <div class="caso">
-          <h3>🌪️ Ecommerce saturado de mensajes</h3>
-          <p>Implementamos bot IG+WSP → +42% ventas.</p>
-        </div>
-
-        <div class="caso">
-          <h3>🏗️ Pyme facturando manual</h3>
-          <p>Automatizamos el proceso → de 5 horas a 12 minutos.</p>
-        </div>
-
-        <div class="caso">
-          <h3>🚀 Marca sin ventas claras</h3>
-          <p>Nueva web + Google Ads → 3.2x ROAS.</p>
-        </div>
-
+  <!-- CASOS DE USO -->
+  <section class="casos-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Resultados</span>
+        <h2>Ejemplos de uso</h2>
+        <p>Casos reales de nuestros clientes</p>
       </div>
-    </section>
+      <div class="casos-grid">
+        <div class="caso-card">
+          <div class="caso-emoji">&#127786;</div>
+          <h3>Ecommerce saturado de mensajes</h3>
+          <p>Implementamos bot IG+WSP y lograron <strong>+42% en ventas</strong>.</p>
+        </div>
+        <div class="caso-card">
+          <div class="caso-emoji">&#127959;</div>
+          <h3>Pyme facturando manual</h3>
+          <p>Automatizamos el proceso: de <strong>5 horas a 12 minutos</strong>.</p>
+        </div>
+        <div class="caso-card">
+          <div class="caso-emoji">&#128640;</div>
+          <h3>Marca sin ventas claras</h3>
+          <p>Nueva web + Google Ads = <strong>3.2x ROAS</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  </main>
-
-  <!-- JS DEL CARRUSEL -->
-  <script src="js/servicios.js"></script>
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Necesitas algo a medida?</h2>
+        <p>Contanos tu problema y te armamos la solucion perfecta.</p>
+        <a href="contacto.html" class="btn btn-primary btn-lg">Hablemos de tu proyecto</a>
+      </div>
+    </div>
+  </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-section">
-        <h3>Gamma Automatizaciones</h3>
-        <p>Automatizamos tu negocio para que crezcas más rápido y eficiente.</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">
+            <img src="Images/logo-gamma.svg" alt="Gamma" class="footer-logo">
+            <span>GAMMA</span>
+          </div>
+          <p class="footer-desc">Automatizamos tu negocio para que crezcas mas rapido y eficiente.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <a href="mailto:gamma.automatizaciones@gmail.com">gamma.automatizaciones@gmail.com</a>
+          <a href="https://wa.me/5493854356825" target="_blank">+54 9 3854 35-6825</a>
+          <a href="https://instagram.com/gamma.caba" target="_blank">@gamma.caba</a>
+        </div>
+        <div class="footer-col">
+          <h4>Enlaces</h4>
+          <a href="servicios.html">Servicios</a>
+          <a href="quienes-somos.html">Quienes somos</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
       </div>
-      <div class="footer-section">
-        <h3>Contacto</h3>
-        <p>Email: <a href="mailto:gamma.automatizaciones@gmail.com">gamma.automatizaciones@gmail.com</a></p>
-        <p>WhatsApp: <a href="https://wa.me/5493854356825" target="_blank">+54 9 3854 35-6825</a></p>
-        <p>Instagram: <a href="https://instagram.com/gamma.caba" target="_blank">@gamma.caba</a></p>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Gamma Automatizaciones. Todos los derechos reservados.</p>
       </div>
-      <div class="footer-section">
-        <h3>Enlaces</h3>
-        <a href="servicios.html">Servicios</a><br>
-        <a href="quienes-somos.html">Quiénes somos</a><br>
-        <a href="contacto.html">Contacto</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 Gamma Automatizaciones. Todos los derechos reservados.</p>
     </div>
   </footer>
 
+  <script src="js/servicios.js"></script>
+  <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+        toggle.classList.toggle('active');
+      });
+    }
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.servicio-card, .caso-card, .cta-box').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+  </script>
+
 </body>
 </html>
-
-

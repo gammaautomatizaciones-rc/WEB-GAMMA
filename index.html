@@ -4,150 +4,350 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gamma Automatizaciones</title>
-  <link rel="icon" href="Images/LOGO FINAK.png" type="image/png">
+  <link rel="icon" href="Images/logo-gamma.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
 
-  <!-- CONTENEDOR GENERAL (para controlar full screen en desktop) -->
-  <div class="layout">
+  <!-- NAV FIJO -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="Images/logo-gamma.svg" alt="Gamma" class="nav-logo">
+        <span class="nav-brand-text">GAMMA</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="informacion.html">Informacion</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="quienes-somos.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <a href="contacto.html" class="nav-cta">Empezar</a>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-    <!-- HEADER -->
-    <header class="hero">
-      <div class="overlay"></div>
-      <img src="Images/LOGO FINAK.png" alt="Logo Gamma" class="logo">
-      <h1>GAMMA</h1>
-      <h2>AUTOMATIZACIONES</h2>
-      <p class="tagline">FÁCIL • RÁPIDO • SIN DOLOR DE CABEZA</p>
-    </header>
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Automatizaciones para PyMEs</div>
+      <h1>Automatiza tu negocio,<br><span class="hero-accent">sin complicarte la vida</span></h1>
+      <p class="hero-sub">Implementamos sistemas inteligentes para que dejes de perder horas en tareas repetitivas y puedas enfocarte en hacer crecer tu negocio.</p>
+      <div class="hero-actions">
+        <a href="contacto.html" class="btn btn-primary">Quiero empezar</a>
+        <a href="servicios.html" class="btn btn-outline">Ver servicios</a>
+      </div>
+      <div class="hero-stats-row">
+        <div class="hero-stat">
+          <span class="hero-stat-num">+42%</span>
+          <span class="hero-stat-label">Mas ventas</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">5x</span>
+          <span class="hero-stat-label">Mas rapido</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">24/7</span>
+          <span class="hero-stat-label">Atencion auto.</span>
+        </div>
+      </div>
+    </div>
+  </header>
 
-    <!-- NAV -->
-    <nav>
-      <a href="informacion.html">Información</a>
-      <a href="servicios.html">Servicios</a>
-      <a href="quienes-somos.html">Quiénes somos</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-
-    <!-- INTRO (ocupa el resto del alto) -->
-    <main class="intro">
-      <h2>Automatizá tu pyme sin complicarte la vida</h2>
-      <p>Implementamos sistemas inteligentes para que dejes de perder horas en tareas repetitivas y puedas enfocarte en hacer crecer tu negocio.</p>
-      <a href="contacto.html" class="cta-float">Quiero empezar</a>
-
-    </main>
-
-    <!-- TIPS PARA EMPRENDEDORES -->
-    <section class="tips">
-      <h2>Tips para automatizar tu negocio</h2>
-      <div class="tips-grid">
-        <div class="tip">
-          <h3>📱 Empieza por WhatsApp</h3>
+  <!-- SERVICIOS DESTACADOS -->
+  <section class="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Soluciones</span>
+        <h2>Tips para automatizar tu negocio</h2>
+        <p>Herramientas probadas que transforman la forma en que operas</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>WhatsApp Automatizado</h3>
           <p>Automatiza respuestas comunes y nunca pierdas una consulta importante.</p>
         </div>
-        <div class="tip">
-          <h3>📧 Organiza tus emails</h3>
-          <p>Deja que la IA filtre, priorice y responda correos mientras dormís.</p>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+          <h3>Emails Inteligentes</h3>
+          <p>Deja que la IA filtre, priorice y responda correos mientras dormis.</p>
         </div>
-        <div class="tip">
-          <h3>💼 Factura sin esfuerzo</h3>
-          <p>De horas de trabajo manual a minutos con sistemas automáticos.</p>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3>Facturacion Express</h3>
+          <p>De horas de trabajo manual a minutos con sistemas automaticos.</p>
         </div>
-        <div class="tip">
-          <h3>📊 Actualiza precios automáticamente</h3>
-          <p>Mantén a tus clientes informados sin trabajo extra de tu parte.</p>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>Precios Automaticos</h3>
+          <p>Mantene a tus clientes informados sin trabajo extra de tu parte.</p>
         </div>
-        <div class="tip">
-          <h3>🌐 Ten presencia online</h3>
-          <p>Una web profesional atrae más clientes y genera confianza.</p>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Presencia Online</h3>
+          <p>Una web profesional atrae mas clientes y genera confianza.</p>
         </div>
-        <div class="tip">
-          <h3>🎯 Invierte en marketing inteligente</h3>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3>Marketing Inteligente</h3>
           <p>Google Ads y Meta pueden multiplicar tus ventas si se hacen bien.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- BENEFICIOS -->
-    <section class="beneficios">
-      <h2>¿Por qué elegir Gamma?</h2>
-      <div class="beneficios-list">
-        <div class="beneficio">
-          <h3>🚀 Ahorro de Tiempo</h3>
+  <!-- POR QUE GAMMA -->
+  <section class="why-gamma">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Beneficios</span>
+        <h2>Por que elegir Gamma?</h2>
+        <p>Resultados reales para negocios reales</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-number">01</div>
+          <h3>Ahorro de Tiempo</h3>
           <p>Automatiza tareas repetitivas y recupera horas valiosas para crecer tu negocio.</p>
         </div>
-        <div class="beneficio">
-          <h3>🛡️ Soporte Local</h3>
-          <p>Equipo argentino que entiende tu realidad y te acompaña en el proceso.</p>
+        <div class="why-card">
+          <div class="why-number">02</div>
+          <h3>Soporte Local</h3>
+          <p>Equipo argentino que entiende tu realidad y te acompa&ntilde;a en el proceso.</p>
         </div>
-        <div class="beneficio">
-          <h3>💰 Reducción de Costos</h3>
+        <div class="why-card">
+          <div class="why-number">03</div>
+          <h3>Reduccion de Costos</h3>
           <p>Soluciones accesibles que reemplazan trabajo manual sin aumentar tu estructura.</p>
         </div>
-        <div class="beneficio">
-          <h3>🎯 Más Ventas</h3>
-          <p>Bots y marketing inteligente que convierten más consultas en clientes.</p>
+        <div class="why-card">
+          <div class="why-number">04</div>
+          <h3>Mas Ventas</h3>
+          <p>Bots y marketing inteligente que convierten mas consultas en clientes.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ESTADÍSTICAS -->
-    <section class="stats">
-      <h2>Resultados que hablan por sí solos</h2>
-      <div class="stats-grid">
-        <div class="stat">
-          <span class="numero">+42%</span>
-          <p>Aumento en ventas con bots</p>
+  <!-- GAMMA SG PROMO -->
+  <section class="gamma-sg">
+    <div class="container">
+      <div class="gamma-sg-wrapper">
+        <div class="gamma-sg-content">
+          <div class="gamma-sg-badge">Nuevo producto</div>
+          <h2>Conoce <span>GAMMA SG</span><br>Sistema de Gestion</h2>
+          <p>El sistema completo para administrar tu negocio: ventas, inventario, facturacion, clientes y mucho mas. Todo en un solo lugar.</p>
+          <div class="gamma-sg-features">
+            <div class="gamma-sg-feat">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              Punto de Venta (POS)
+            </div>
+            <div class="gamma-sg-feat">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              Control de inventario
+            </div>
+            <div class="gamma-sg-feat">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              Gestion de clientes
+            </div>
+            <div class="gamma-sg-feat">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              Reportes y estadisticas
+            </div>
+            <div class="gamma-sg-feat">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              Multi-sucursal
+            </div>
+            <div class="gamma-sg-feat">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              Soporte incluido
+            </div>
+          </div>
+          <div class="gamma-sg-actions">
+            <a href="https://gamma-sg-oficial.pages.dev/" target="_blank" class="btn btn-primary">Probar gratis 14 dias</a>
+            <a href="https://gamma-sg-oficial.pages.dev/" target="_blank" class="gamma-sg-link">
+              Ver mas detalles
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
         </div>
-        <div class="stat">
-          <span class="numero">5x</span>
-          <p>Más rápido en facturación</p>
-        </div>
-        <div class="stat">
-          <span class="numero">24/7</span>
-          <p>Atención automática</p>
-        </div>
-        <div class="stat">
-          <span class="numero">100%</span>
-          <p>Satisfacción cliente</p>
+        <div class="gamma-sg-visual">
+          <div class="gamma-sg-mockup">
+            <div class="mockup-header">
+              <div class="mockup-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="mockup-title">GAMMA SG - Panel de control</span>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-row">
+                <div class="mockup-sidebar">
+                  <div class="mockup-sidebar-item active"></div>
+                  <div class="mockup-sidebar-item"></div>
+                  <div class="mockup-sidebar-item"></div>
+                  <div class="mockup-sidebar-item"></div>
+                  <div class="mockup-sidebar-item"></div>
+                </div>
+                <div class="mockup-main">
+                  <div class="mockup-stat-row">
+                    <div class="mockup-stat-card">
+                      <span class="mockup-stat-val">1.2k</span>
+                      <span class="mockup-stat-lbl">Ventas</span>
+                    </div>
+                    <div class="mockup-stat-card">
+                      <span class="mockup-stat-val">567</span>
+                      <span class="mockup-stat-lbl">Articulos</span>
+                    </div>
+                    <div class="mockup-stat-card">
+                      <span class="mockup-stat-val">89</span>
+                      <span class="mockup-stat-lbl">Clientes</span>
+                    </div>
+                  </div>
+                  <div class="mockup-chart">
+                    <div class="mockup-bar"></div>
+                    <div class="mockup-bar"></div>
+                    <div class="mockup-bar"></div>
+                    <div class="mockup-bar"></div>
+                    <div class="mockup-bar"></div>
+                    <div class="mockup-bar"></div>
+                    <div class="mockup-bar"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gamma-sg-plans">
+            <div class="sg-plan">
+              <div class="sg-plan-name">Basico</div>
+              <div class="sg-plan-price">$50.000<small>/mes</small></div>
+            </div>
+            <div class="sg-plan featured">
+              <div class="sg-plan-name">Premium</div>
+              <div class="sg-plan-price">$100.000<small>/mes</small></div>
+            </div>
+            <div class="sg-plan">
+              <div class="sg-plan-name">Enterprise</div>
+              <div class="sg-plan-price">$300.000<small>/mes</small></div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- LLAMADO A ACCIÓN -->
-    <section class="cta-section">
-      <h2>Listo para automatizar tu negocio?</h2>
-      <p>Contactanos hoy y descubrí cómo podemos transformar tu empresa.</p>
-      <a href="contacto.html" class="cta-main">Hablemos de tu proyecto</a>
-    </section>
+  <!-- ESTADISTICAS -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-banner">
+        <div class="stat-item">
+          <span class="stat-number">+42%</span>
+          <span class="stat-label">Aumento en ventas con bots</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">5x</span>
+          <span class="stat-label">Mas rapido en facturacion</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">24/7</span>
+          <span class="stat-label">Atencion automatica</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Satisfaccion cliente</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>Gamma Automatizaciones</h3>
-          <p>Automatizamos tu negocio para que crezcas más rápido y eficiente.</p>
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Listo para automatizar tu negocio?</h2>
+        <p>Contactanos hoy y descubri como podemos transformar tu empresa.</p>
+        <a href="contacto.html" class="btn btn-primary btn-lg">Hablemos de tu proyecto</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">
+            <img src="Images/logo-gamma.svg" alt="Gamma" class="footer-logo">
+            <span>GAMMA</span>
+          </div>
+          <p class="footer-desc">Automatizamos tu negocio para que crezcas mas rapido y eficiente.</p>
         </div>
-        <div class="footer-section">
-          <h3>Contacto</h3>
-          <p>Email: <a href="mailto:gamma.automatizaciones@gmail.com">gamma.automatizaciones@gmail.com</a></p>
-          <p>WhatsApp: <a href="https://wa.me/5493854356825" target="_blank">+54 9 3854 35-6825</a></p>
-          <p>Instagram: <a href="https://instagram.com/gamma.caba" target="_blank">@gamma.caba</a></p>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <a href="mailto:gamma.automatizaciones@gmail.com">gamma.automatizaciones@gmail.com</a>
+          <a href="https://wa.me/5493854356825" target="_blank">+54 9 3854 35-6825</a>
+          <a href="https://instagram.com/gamma.caba" target="_blank">@gamma.caba</a>
         </div>
-        <div class="footer-section">
-          <h3>Enlaces</h3>
-          <a href="servicios.html">Servicios</a><br>
-          <a href="quienes-somos.html">Quiénes somos</a><br>
+        <div class="footer-col">
+          <h4>Enlaces</h4>
+          <a href="servicios.html">Servicios</a>
+          <a href="quienes-somos.html">Quienes somos</a>
           <a href="contacto.html">Contacto</a>
         </div>
       </div>
       <div class="footer-bottom">
         <p>&copy; 2025 Gamma Automatizaciones. Todos los derechos reservados.</p>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-  </div>
+  <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+        toggle.classList.toggle('active');
+      });
+    }
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.feature-card, .why-card, .stat-item, .cta-box, .gamma-sg-mockup, .gamma-sg-content').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+  </script>
 
 </body>
 </html>

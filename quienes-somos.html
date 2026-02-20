@@ -4,219 +4,222 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiénes Somos | Gamma Automatizaciones</title>
-  <link rel="icon" href="Images/LOGO FINAK.png" type="image/png">
-  <style>
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-      background: #111;
-      color: #fff;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-    header {
-      background: url('Images/ChatGPT Image 31 jul 2025, 04_48_08 p.m..png') no-repeat center center/cover;
-      padding: 36px 16px 28px 16px;
-      text-align: center;
-      position: relative;
-    }
-    header img {
-      width: 150px;
-      margin-bottom: 20px;
-      filter: drop-shadow(0 4px 20px rgba(0,0,0,0.5));
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    header h1 { font-size: 2.3rem; letter-spacing: 2px; font-weight: 900; }
-    header h2 { font-size: 1.2rem; font-weight: 500; margin-top: 6px; letter-spacing: 1px; }
-    nav {
-      width: 100%;
-      background: #000;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 13px 0 10px 0;
-      box-shadow: 0 2px 18px 0 rgba(0,0,0,0.12);
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 7px 14px;
-      font-size: 1rem;
-      font-weight: 600;
-      transition: color .17s, border-bottom .17s;
-      border-bottom: 2px solid transparent;
-      padding-bottom: 2px;
-    }
-    nav a:hover, nav a:focus {
-      color: #ffb347;
-      border-bottom: 2px solid #ffb347;
-      outline: none;
-    }
-    main {
-      width: 100%;
-      max-width: 800px;
-      margin: 38px auto 0 auto;
-      padding: 32px 18px 36px 18px;
-      background: rgba(20,20,20,0.92);
-      border-radius: 18px;
-      box-shadow: 0 4px 32px 0 rgba(0,0,0,0.16);
-    }
-    main h2 {
-      font-size: 1.6rem;
-      margin-bottom: 18px;
-      color: #ffb347;
-      letter-spacing: 1px;
-    }
-    main h3 {
-      color: #fff;
-      font-size: 1.19rem;
-      margin-top: 24px;
-      margin-bottom: 8px;
-      letter-spacing: .5px;
-      font-weight: 700;
-    }
-    main p, main ul {
-      font-size: 1.07rem;
-      color: #e2e2e2;
-      line-height: 1.7;
-      margin-bottom: 11px;
-    }
-    ul {
-      margin-left: 24px;
-      margin-bottom: 14px;
-    }
-    .diferencial, .testimonios, .cta {
-      margin-top: 28px;
-    }
-    .testimonio {
-      background: #191919;
-      border-left: 4px solid #ffb347;
-      margin-bottom: 12px;
-      padding: 12px 22px 8px 18px;
-      border-radius: 8px;
-      font-style: italic;
-      color: #ffe7b0;
-      font-size: 1rem;
-    }
-    .cta {
-      margin-top: 32px;
-      text-align: center;
-    }
-    .cta a {
-      background: #ffb347;
-      color: #222;
-      padding: 13px 30px;
-      font-weight: bold;
-      border-radius: 8px;
-      text-decoration: none;
-      box-shadow: 0 2px 14px 0 rgba(0,0,0,.13);
-      font-size: 1.06rem;
-      transition: background .18s;
-      display: inline-block;
-      margin-top: 12px;
-    }
-    .cta a:hover {
-      background: #ffcf81;
-    }
-    @media (max-width: 600px) {
-      header { padding: 22px 6px 18px 6px; }
-      header img { width: 100px; margin-bottom: 15px; }
-      header h1 { font-size: 1.18rem; }
-      nav a { margin: 5px 6px; font-size: 0.93rem; }
-      main { padding: 14px 4px 18px 4px; border-radius: 9px; }
-      main h2 { font-size: 1.08rem; }
-      .testimonio { font-size: 0.93rem; padding: 8px 10px 5px 11px; }
-    }
-  </style>
+  <link rel="icon" href="Images/logo-gamma.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/quienes-somos.css">
 </head>
 <body>
-  <header>
-    <img src="Images/LOGO FINAK.png" alt="Logo Gamma Automatizaciones">
-    <h1>GAMMA AUTOMATIZACIONES</h1>
-    <h2>QUIÉNES SOMOS</h2>
-  </header>
-  <nav>
-    <a href="index.html">-Inicio</a>
-    <a href="informacion.html">-Informacion</a>
-    <a href="servicios.html">-Servicios</a>
-    <a href="quienes-somos.html">-Quienes somos</a>
-    <a href="contacto.html">-Contactanos</a>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="Images/logo-gamma.svg" alt="Gamma" class="nav-logo">
+        <span class="nav-brand-text">GAMMA</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="informacion.html">Informacion</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="quienes-somos.html" class="active">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <a href="contacto.html" class="nav-cta">Empezar</a>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </nav>
-  <main>
-    <h2>Quiénes somos</h2>
-    <p>
-      En Gamma Automatizaciones somos más que una empresa de tecnología: somos aliados de tu crecimiento. Nacimos para hacerle la vida más fácil a quienes emprenden, lideran o gestionan un negocio. Sabemos lo que es correr todo el día, sentir que no te alcanza el tiempo y tener mil cosas por resolver. Por eso, nuestro objetivo es que tu empresa funcione en piloto automático, para que vos puedas enfocarte en crecer y disfrutar de los resultados.
-    </p>
-    <h3>¿Por qué elegirnos?</h3>
-    <ul>
-      <li>Hablamos tu idioma y entendemos tu día a día. Nada de tecnicismos ni procesos imposibles: hacemos que la tecnología sea simple y útil para vos.</li>
-      <li>Cada solución es personalizada. No vendemos “paquetes mágicos”: nos metemos de lleno en tu realidad y te proponemos lo que realmente necesitás.</li>
-      <li>Ahorrás tiempo y dinero desde el primer mes. Automatizar es invertir en tranquilidad y eficiencia.</li>
-      <li>El soporte es real, humano y argentino. Siempre vas a tener a alguien de nuestro equipo para acompañarte.</li>
-    </ul>
-    <h3>Nuestra historia</h3>
-    <p>
-      Gamma surge de la experiencia de dos emprendedores que vieron de cerca el desgaste de llevar un negocio y la falta de herramientas prácticas en el mercado. Creamos Gamma para transformar la manera en la que las pymes y comercios pueden acceder a la tecnología y la inteligencia artificial, con calidez humana y sin costos ocultos.
-    </p>
-    <div class="diferencial">
-      <h3>Nuestro diferencial</h3>
-      <ul>
-        <li>Te ayudamos a crecer sin tener que sumar empleados ni aumentar tu estructura.</li>
-        <li>Nuestras soluciones son escalables: empiezan por lo básico y te acompañan a medida que creces.</li>
-        <li>Tu información y procesos quedan siempre bajo control, con total seguridad y privacidad.</li>
-        <li>Cuidamos tu bolsillo: nuestros precios son transparentes y mucho más accesibles que contratar personal o consultoras tradicionales.</li>
-      </ul>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Sobre nosotros</div>
+      <h1>Aliados de tu <span class="accent">crecimiento</span></h1>
+      <p>Somos mas que una empresa de tecnologia. Nacimos para hacerle la vida mas facil a quienes emprenden, lideran o gestionan un negocio.</p>
     </div>
-    <div class="testimonios">
-      <h3>Testimonios</h3>
-      <div class="testimonio">
-        “Desde que automatizamos con Gamma, la administración de mi empresa es otra. Menos estrés, más control y más tiempo libre.”
-      </div>
-      <div class="testimonio">
-        “El mejor soporte, siempre me ayudan rápido y me dan soluciones concretas.”
-      </div>
-      <div class="testimonio">
-        “Implementaron bots en mi negocio y ahora atiendo consultas 24/7 sin estar pegado al teléfono. Increíble el cambio.”
-      </div>
-      <div class="testimonio">
-        “Pensé que la automatización era cara y complicada, pero Gamma me demostró lo contrario. Todo fue sencillo y rentable desde el primer mes.”
-      </div>
-      <div class="testimonio">
-        “La facturación automática me ahorra horas semanales. Ahora puedo enfocarme en crecer mi marca en lugar de papeleo.”
+  </header>
+
+  <!-- HISTORIA -->
+  <section class="story-section">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-content">
+          <span class="section-tag">Nuestra historia</span>
+          <h2>De emprendedores, para emprendedores</h2>
+          <p>Gamma surge de la experiencia de dos emprendedores que vieron de cerca el desgaste de llevar un negocio y la falta de herramientas practicas en el mercado.</p>
+          <p>Creamos Gamma para transformar la manera en la que las pymes y comercios pueden acceder a la tecnologia y la inteligencia artificial, con calidez humana y sin costos ocultos.</p>
+        </div>
+        <div class="story-values">
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Confianza</h3>
+            <p>Soporte real, humano y argentino. Siempre vas a tener alguien para acompañarte.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3>Calidad</h3>
+            <p>Cada solucion es personalizada. Nos metemos de lleno en tu realidad.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3>Accesible</h3>
+            <p>Precios transparentes y mucho mas accesibles que consultoras tradicionales.</p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="cta">
-      <p>Sumate a la evolución digital. Con Gamma, la tecnología deja de ser un problema y se convierte en tu mejor aliada para vivir mejor, vender más y trabajar menos.</p>
-      <a href="contacto.html">Hablá con nosotros</a>
+  </section>
+
+  <!-- POR QUE ELEGIRNOS -->
+  <section class="reasons-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Beneficios</span>
+        <h2>Por que elegirnos?</h2>
+        <p>Lo que nos diferencia del resto</p>
+      </div>
+      <div class="reasons-grid">
+        <div class="reason-card">
+          <div class="reason-number">01</div>
+          <h3>Hablamos tu idioma</h3>
+          <p>Nada de tecnicismos ni procesos imposibles. Hacemos que la tecnologia sea simple y util para vos.</p>
+        </div>
+        <div class="reason-card">
+          <div class="reason-number">02</div>
+          <h3>Ahorro desde el dia 1</h3>
+          <p>Ahorras tiempo y dinero desde el primer mes. Automatizar es invertir en tranquilidad y eficiencia.</p>
+        </div>
+        <div class="reason-card">
+          <div class="reason-number">03</div>
+          <h3>Soluciones escalables</h3>
+          <p>Empiezan por lo basico y te acompañan a medida que creces. Sin limites.</p>
+        </div>
+        <div class="reason-card">
+          <div class="reason-number">04</div>
+          <h3>Seguridad total</h3>
+          <p>Tu informacion y procesos quedan siempre bajo control, con total seguridad y privacidad.</p>
+        </div>
+      </div>
     </div>
-  </main>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="testimonios-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Testimonios</span>
+        <h2>Lo que dicen nuestros clientes</h2>
+        <p>Historias reales de quienes confiaron en Gamma</p>
+      </div>
+      <div class="testimonios-grid">
+        <div class="testimonio-card">
+          <div class="testimonio-quote">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" opacity="0.3"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+          </div>
+          <p>Desde que automatizamos con Gamma, la administracion de mi empresa es otra. Menos estres, mas control y mas tiempo libre.</p>
+        </div>
+        <div class="testimonio-card">
+          <div class="testimonio-quote">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" opacity="0.3"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+          </div>
+          <p>El mejor soporte, siempre me ayudan rapido y me dan soluciones concretas.</p>
+        </div>
+        <div class="testimonio-card">
+          <div class="testimonio-quote">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" opacity="0.3"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+          </div>
+          <p>Implementaron bots en mi negocio y ahora atiendo consultas 24/7 sin estar pegado al telefono. Increible el cambio.</p>
+        </div>
+        <div class="testimonio-card">
+          <div class="testimonio-quote">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" opacity="0.3"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+          </div>
+          <p>Pense que la automatizacion era cara y complicada, pero Gamma me demostro lo contrario. Todo fue sencillo y rentable.</p>
+        </div>
+        <div class="testimonio-card">
+          <div class="testimonio-quote">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" opacity="0.3"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+          </div>
+          <p>La facturacion automatica me ahorra horas semanales. Ahora puedo enfocarme en crecer mi marca en lugar de papeleo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Sumate a la evolucion digital</h2>
+        <p>Con Gamma, la tecnologia deja de ser un problema y se convierte en tu mejor aliada.</p>
+        <a href="contacto.html" class="btn btn-primary btn-lg">Habla con nosotros</a>
+      </div>
+    </div>
+  </section>
 
   <!-- FOOTER -->
-  <footer style="background: #000; color: #fff; padding: 20px 0; text-align: center; margin-top: 20px;">
-    <div style="display: flex; justify-content: space-around; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; padding: 0 20px;">
-      <div style="margin: 10px; min-width: 200px; text-align: left;">
-        <h3 style="color: #ffb347; margin-bottom: 10px; font-size: 1.2rem;">Gamma Automatizaciones</h3>
-        <p style="margin: 5px 0; line-height: 1.5;">Automatizamos tu negocio para que crezcas más rápido y eficiente.</p>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">
+            <img src="Images/logo-gamma.svg" alt="Gamma" class="footer-logo">
+            <span>GAMMA</span>
+          </div>
+          <p class="footer-desc">Automatizamos tu negocio para que crezcas mas rapido y eficiente.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <a href="mailto:gamma.automatizaciones@gmail.com">gamma.automatizaciones@gmail.com</a>
+          <a href="https://wa.me/5493854356825" target="_blank">+54 9 3854 35-6825</a>
+          <a href="https://instagram.com/gamma.caba" target="_blank">@gamma.caba</a>
+        </div>
+        <div class="footer-col">
+          <h4>Enlaces</h4>
+          <a href="servicios.html">Servicios</a>
+          <a href="quienes-somos.html">Quienes somos</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
       </div>
-      <div style="margin: 10px; min-width: 200px; text-align: left;">
-        <h3 style="color: #ffb347; margin-bottom: 10px; font-size: 1.2rem;">Contacto</h3>
-        <p style="margin: 5px 0;">Email: <a href="mailto:gamma.automatizaciones@gmail.com" style="color: #ccc; text-decoration: none;">gamma.automatizaciones@gmail.com</a></p>
-        <p style="margin: 5px 0;">WhatsApp: <a href="https://wa.me/5493854356825" target="_blank" style="color: #ccc; text-decoration: none;">+54 9 3854 35-6825</a></p>
-        <p style="margin: 5px 0;">Instagram: <a href="https://instagram.com/gamma.caba" target="_blank" style="color: #ccc; text-decoration: none;">@gamma.caba</a></p>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Gamma Automatizaciones. Todos los derechos reservados.</p>
       </div>
-      <div style="margin: 10px; min-width: 200px; text-align: left;">
-        <h3 style="color: #ffb347; margin-bottom: 10px; font-size: 1.2rem;">Enlaces</h3>
-        <a href="servicios.html" style="color: #ccc; text-decoration: none; display: block; margin: 5px 0;">Servicios</a>
-        <a href="quienes-somos.html" style="color: #ccc; text-decoration: none; display: block; margin: 5px 0;">Quiénes somos</a>
-        <a href="contacto.html" style="color: #ccc; text-decoration: none; display: block; margin: 5px 0;">Contacto</a>
-      </div>
-    </div>
-    <div style="border-top: 1px solid #333; margin-top: 20px; padding-top: 10px; color: #999; font-size: 0.9rem;">
-      <p>&copy; 2025 Gamma Automatizaciones. Todos los derechos reservados.</p>
     </div>
   </footer>
+
+  <script>
+    // Mobile nav
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+        toggle.classList.toggle('active');
+      });
+    }
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.value-card, .reason-card, .testimonio-card, .cta-box, .story-content').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+  </script>
+
 </body>
 </html>
