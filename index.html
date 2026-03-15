@@ -155,7 +155,7 @@
             <img src="Images/facturacion.png" alt="Facturacion" loading="lazy">
           </div>
           <h3>Facturacion</h3>
-          <p>Genera facturas, remitos y comprobantes de forma rapida y sin errores.</p>
+          <p>Genera remitos y comprobantes de forma rapida y sin errores.</p>
         </div>
       </div>
       <div class="sistema-cta">
@@ -472,6 +472,41 @@
       el.classList.add('reveal');
       observer.observe(el);
     });
+
+    // --- GAMMA ANALYTICS TRACKING ---
+    (function(){
+      var API = 'https://gamma-analytics.gammasg.workers.dev';
+      var page = location.pathname;
+
+      // Track visit
+      fetch(API+'/api/visit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({
+        page: page,
+        referrer: document.referrer,
+        user_agent: navigator.userAgent,
+        screen_w: screen.width,
+        screen_h: screen.height
+      })}).catch(function(){});
+
+      // Track clicks on important buttons
+      document.addEventListener('click', function(e){
+        var el = e.target.closest('[onclick*="gtag_report_conversion"], .btn-wsp, .btn-ver-sistema, .wsp-float, .nav-cta');
+        if(!el) return;
+        var name = el.id || el.className.split(' ').find(function(c){return c.startsWith('btn-')||c==='wsp-float'||c==='nav-cta'}) || 'other';
+        fetch(API+'/api/click',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({
+          page: page, element: name
+        })}).catch(function(){});
+      });
+
+      // Track scroll depth on leave
+      var maxScroll = 0;
+      window.addEventListener('scroll', function(){
+        var h = document.documentElement.scrollHeight - window.innerHeight;
+        if(h > 0) maxScroll = Math.max(maxScroll, Math.round(window.scrollY / h * 100));
+      });
+      window.addEventListener('beforeunload', function(){
+        navigator.sendBeacon(API+'/api/scroll', JSON.stringify({page:page,depth:maxScroll}));
+      });
+    })();
   </script>
 
 </body>
