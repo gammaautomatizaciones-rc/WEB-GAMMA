@@ -17,6 +17,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
+
+  <!-- Google Ads gtag.js -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17488015524"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17488015524');
+  </script>
 </head>
 
 <body>
@@ -35,42 +44,113 @@
         <a href="quienes-somos.html">Nosotros</a>
         <a href="contacto.html">Contacto</a>
       </div>
-      <a href="contacto.html" class="nav-cta">Empezar</a>
+      <a href="https://wa.me/5493854356825?text=Hola!%20Quiero%20info%20sobre%20GAMMA%20SG" target="_blank" class="nav-cta" onclick="trackConversion()">Escribinos</a>
       <button class="nav-toggle" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <!-- HERO -->
+  <!-- HERO - Landing para Google Ads -->
   <header class="hero">
     <div class="hero-bg"></div>
     <div class="hero-content">
-      <div class="hero-badge">Automatizaciones para PyMEs</div>
-      <h1>Automatiza tu negocio,<br><span class="hero-accent">sin complicarte la vida</span></h1>
-      <p class="hero-sub">Implementamos sistemas inteligentes para que dejes de perder horas en tareas repetitivas y puedas enfocarte en hacer crecer tu negocio.</p>
+      <div class="hero-badge">Sistema de Gestion para tu Negocio</div>
+      <h1>Controla tu negocio<br><span class="hero-accent">desde un solo lugar</span></h1>
+      <p class="hero-sub">GAMMA SG es el sistema que te permite manejar caja, ventas, stock, clientes y mas. Simple, rapido y con soporte humano.</p>
       <div class="hero-actions">
-        <a href="contacto.html" class="btn btn-primary">Quiero empezar</a>
-        <a href="servicios.html" class="btn btn-outline">Ver servicios</a>
+        <a href="https://wa.me/5493854356825?text=Hola!%20Quiero%20info%20sobre%20el%20sistema%20de%20gestion%20GAMMA%20SG" target="_blank" class="btn btn-wsp btn-lg" id="btn-wsp-hero" onclick="trackConversion()">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Hablar por WhatsApp
+        </a>
+        <button class="btn btn-ver-sistema btn-lg" id="btn-ver-sistema" onclick="toggleSistemaInfo()">
+          Quiero ver que hace el sistema
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="chevron-icon"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
       </div>
-      <div class="hero-stats-row">
-        <div class="hero-stat">
-          <span class="hero-stat-num">+42%</span>
-          <span class="hero-stat-label">Mas ventas</span>
-        </div>
-        <div class="hero-stat-divider"></div>
-        <div class="hero-stat">
-          <span class="hero-stat-num">5x</span>
-          <span class="hero-stat-label">Mas rapido</span>
-        </div>
-        <div class="hero-stat-divider"></div>
-        <div class="hero-stat">
-          <span class="hero-stat-num">24/7</span>
-          <span class="hero-stat-label">Atencion auto.</span>
-        </div>
+      <div class="hero-trust">
+        <span>Sin compromiso</span>
+        <span class="hero-trust-dot"></span>
+        <span>Respuesta inmediata</span>
+        <span class="hero-trust-dot"></span>
+        <span>Soporte argentino</span>
+      </div>
+      <div class="hero-rubros">
+        <div class="hero-rubro">&#127915; Agencia de Loteria</div>
+        <div class="hero-rubro">&#127860; Bar / Restaurante</div>
+        <div class="hero-rubro">&#128170; Gimnasio</div>
+        <div class="hero-rubro">&#127790; Kiosco / Almacen</div>
+        <div class="hero-rubro">&#128241; Celulares</div>
+        <div class="hero-rubro">&#128090; Tienda de Ropa</div>
+        <div class="hero-rubro">&#9986;&#65039; Peluqueria</div>
+        <div class="hero-rubro">&#128736;&#65039; Ferreteria</div>
+        <div class="hero-rubro">&#127981; Libreria</div>
+        <div class="hero-rubro">&#128187; Admin. General</div>
       </div>
     </div>
   </header>
+
+  <!-- INFO DEL SISTEMA (se muestra al hacer click) -->
+  <section class="sistema-info" id="sistema-info">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">GAMMA SG</span>
+        <h2>Todo lo que necesitas para manejar tu negocio</h2>
+        <p>Un sistema completo, simple y pensado para negocios argentinos</p>
+      </div>
+      <div class="sistema-grid">
+        <div class="sistema-card">
+          <div class="sistema-card-img">
+            <img src="Images/caja.png" alt="Panel de Caja" loading="lazy">
+          </div>
+          <h3>Panel de Caja</h3>
+          <p>Registra ventas, cobros y movimientos de caja en tiempo real. Todo queda registrado.</p>
+        </div>
+        <div class="sistema-card">
+          <div class="sistema-card-img">
+            <img src="Images/ventas.png" alt="Control de Ventas" loading="lazy">
+          </div>
+          <h3>Control de Ventas</h3>
+          <p>Historial completo de ventas, filtros por fecha, cliente y producto. Sabes cuanto vendes al instante.</p>
+        </div>
+        <div class="sistema-card">
+          <div class="sistema-card-img">
+            <img src="Images/stock.png" alt="Gestion de Stock" loading="lazy">
+          </div>
+          <h3>Gestion de Stock</h3>
+          <p>Controla tu inventario, recibe alertas de stock bajo y nunca te quedes sin mercaderia.</p>
+        </div>
+        <div class="sistema-card">
+          <div class="sistema-card-img">
+            <img src="Images/clientes.png" alt="Base de Clientes" loading="lazy">
+          </div>
+          <h3>Base de Clientes</h3>
+          <p>Tene todos tus clientes organizados con historial de compras y datos de contacto.</p>
+        </div>
+        <div class="sistema-card">
+          <div class="sistema-card-img">
+            <img src="Images/reportes.png" alt="Reportes" loading="lazy">
+          </div>
+          <h3>Reportes y Estadisticas</h3>
+          <p>Graficos claros para entender como va tu negocio y tomar mejores decisiones.</p>
+        </div>
+        <div class="sistema-card">
+          <div class="sistema-card-img">
+            <img src="Images/facturacion.png" alt="Facturacion" loading="lazy">
+          </div>
+          <h3>Facturacion</h3>
+          <p>Genera facturas, remitos y comprobantes de forma rapida y sin errores.</p>
+        </div>
+      </div>
+      <div class="sistema-cta">
+        <p>Te interesa? Hablemos y te mostramos como funciona</p>
+        <a href="https://wa.me/5493854356825?text=Hola!%20Vi%20el%20sistema%20de%20gestion%20y%20quiero%20mas%20info" target="_blank" class="btn btn-wsp" onclick="trackConversion()">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Hablar por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
 
   <!-- SERVICIOS DESTACADOS -->
   <section class="features">
@@ -195,10 +275,9 @@
             </div>
           </div>
           <div class="gamma-sg-actions">
-            <a href="https://gamma-sg-oficial.pages.dev/" target="_blank" class="btn btn-primary">Probar gratis 14 dias</a>
-            <a href="https://gamma-sg-oficial.pages.dev/" target="_blank" class="gamma-sg-link">
-              Ver mas detalles
-              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <a href="https://wa.me/5493854356825?text=Hola!%20Quiero%20info%20sobre%20GAMMA%20SG" target="_blank" class="btn btn-wsp" onclick="trackConversion()">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Contactar por WhatsApp
             </a>
           </div>
         </div>
@@ -294,12 +373,20 @@
   <section class="cta-section">
     <div class="container">
       <div class="cta-box">
-        <h2>Listo para automatizar tu negocio?</h2>
-        <p>Contactanos hoy y descubri como podemos transformar tu empresa.</p>
-        <a href="contacto.html" class="btn btn-primary btn-lg">Hablemos de tu proyecto</a>
+        <h2>Listo para organizar tu negocio?</h2>
+        <p>Escribinos por WhatsApp y te mostramos el sistema sin compromiso.</p>
+        <a href="https://wa.me/5493854356825?text=Hola!%20Quiero%20ver%20una%20demo%20del%20sistema%20GAMMA%20SG" target="_blank" class="btn btn-wsp btn-lg" onclick="trackConversion()">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Hablar por WhatsApp
+        </a>
       </div>
     </div>
   </section>
+
+  <!-- BOTON FLOTANTE WSP -->
+  <a href="https://wa.me/5493854356825?text=Hola!%20Quiero%20info%20sobre%20GAMMA%20SG" target="_blank" class="wsp-float" onclick="trackConversion()" aria-label="Contactar por WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
 
   <!-- FOOTER -->
   <footer class="footer">
@@ -342,6 +429,30 @@
       });
     }
 
+    // Toggle sistema info section
+    function toggleSistemaInfo() {
+      const section = document.getElementById('sistema-info');
+      const btn = document.getElementById('btn-ver-sistema');
+      const chevron = btn.querySelector('.chevron-icon');
+      section.classList.toggle('active');
+      chevron.style.transform = section.classList.contains('active') ? 'rotate(180deg)' : '';
+      if (section.classList.contains('active')) {
+        setTimeout(() => {
+          section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+      }
+    }
+
+    // Google Ads conversion tracking - solo en click de WhatsApp
+    // IMPORTANTE: Reemplaza 'TU_CONVERSION_LABEL' con el label que te da Google Ads
+    function trackConversion() {
+      if (typeof gtag === 'function') {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-17488015524/TU_CONVERSION_LABEL'
+        });
+      }
+    }
+
     // Scroll reveal
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -351,7 +462,7 @@
       });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.feature-card, .why-card, .stat-item, .cta-box, .gamma-sg-mockup, .gamma-sg-content').forEach(el => {
+    document.querySelectorAll('.feature-card, .why-card, .stat-item, .cta-box, .gamma-sg-mockup, .gamma-sg-content, .sistema-card').forEach(el => {
       el.classList.add('reveal');
       observer.observe(el);
     });
