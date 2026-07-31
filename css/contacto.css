@@ -627,3 +627,15 @@ body {
     top: 12px;
   }
 }
+
+/* Estado del envio del formulario (exito / error) */
+.form-status {
+  margin: 14px 0 0;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  min-height: 1.2em;
+  color: #9aa0a6;
+}
+.form-status.ok    { color: #FFEB3B; font-weight: 600; }
+.form-status.error { color: #ff6b6b; font-weight: 600; }
+.form-status a     { color: inherit; text-decoration: underline; }
