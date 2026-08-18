@@ -9,7 +9,7 @@
   <meta property="og:title" content="Gamma Automatizaciones | Automatizacion para PyMEs">
   <meta property="og:description" content="Automatizamos tu negocio con tecnologia e inteligencia artificial. Bots de WhatsApp, facturacion, paginas web y mas.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="Images/logo-gamma.svg">
+  <meta property="og:image" content="https://gammaautomatizaciones.com/Images/logo-gamma.png">
   <link rel="icon" href="Images/favicon.ico?v=2" sizes="any">
   <link rel="icon" href="Images/logo-gamma.svg?v=2" type="image/svg+xml">
   <link rel="icon" href="Images/logo-gamma.png?v=2" type="image/png" sizes="192x192">
@@ -437,7 +437,45 @@
   </footer>
 
   <script src="js/wsp-modal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
   <script>
+    // Lenis smooth scroll
+    const lenis = new Lenis({ duration: 1.2, smoothWheel: true });
+    function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+    requestAnimationFrame(raf);
+
+    // Navbar shrink on scroll
+    window.addEventListener('scroll', () => {
+      document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    // Animated counters in stats section
+    function animateCounters() {
+      document.querySelectorAll('.stat-number').forEach(el => {
+        const text = el.textContent.trim();
+        if (text.includes('/')) return; // skip 24/7
+        const prefix = text.match(/^[^\d]*/)[0];
+        const suffix = text.match(/[^\d]*$/)[0];
+        const target = parseInt(text.match(/\d+/)[0]);
+        let startTime = null;
+        const step = (ts) => {
+          if (!startTime) startTime = ts;
+          const p = Math.min((ts - startTime) / 1400, 1);
+          const eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = prefix + Math.round(eased * target) + suffix;
+          if (p < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+      });
+    }
+    const statsEl = document.querySelector('.stats');
+    if (statsEl) {
+      const counterObs = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) { animateCounters(); counterObs.disconnect(); }
+      }, { threshold: 0.4 });
+      counterObs.observe(statsEl);
+    }
+
     // Mobile nav toggle
     const toggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');

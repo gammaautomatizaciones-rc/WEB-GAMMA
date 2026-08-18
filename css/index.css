@@ -1279,6 +1279,38 @@ body {
 }
 
 /* ===================================
+   NAVBAR SCROLLED
+=================================== */
+.nav-inner {
+  transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.97);
+  border-bottom-color: rgba(255, 215, 0, 0.12);
+}
+
+.navbar.scrolled .nav-inner {
+  height: 52px;
+}
+
+/* ===================================
+   HERO GRID DE PUNTOS
+=================================== */
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255, 215, 0, 0.18) 1px, transparent 1px);
+  background-size: 36px 36px;
+  -webkit-mask-image: radial-gradient(ellipse 85% 85% at 50% 40%, black 30%, transparent 80%);
+  mask-image: radial-gradient(ellipse 85% 85% at 50% 40%, black 30%, transparent 80%);
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.35;
+}
+
+/* ===================================
    SCROLL REVEAL
 =================================== */
 .reveal {
